@@ -1,0 +1,35 @@
+{
+    "name": "biigle/laravel-dcache",
+    "description": "",
+    "keywords": [
+        "dcache",
+        "flysystem",
+        "filesystem",
+        "laravel"
+    ],
+    "homepage": "https://github.com/biigle/laravel-dcache",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Martin Zurowietz",
+            "email": "m.zurowietz@uni-bielefeld.de"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": ">=10",
+        "biigle/laravel-webdav": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Biigle\\DCache\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Biigle\\DCache\\DCacheServiceProvider"
+            ]
+        }
+    }
+}
