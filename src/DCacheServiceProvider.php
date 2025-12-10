@@ -7,6 +7,8 @@ use Biigle\WebDav\WebDavServiceProvider;
 
 class DCacheServiceProvider extends WebDavServiceProvider
 {
+    const DISK_TYPE = 'dcache';
+
     /**
      * {@inheritdoc}
      */
