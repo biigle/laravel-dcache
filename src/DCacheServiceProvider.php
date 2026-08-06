@@ -12,7 +12,7 @@ class DCacheServiceProvider extends WebDavServiceProvider
     /**
      * {@inheritdoc}
      */
-    protected function getWebDavAdapter($webdavClient, $guzzleClient, $pathPrefix): WebDAVAdapter
+    public function getWebDavAdapter($webdavClient, $guzzleClient, $pathPrefix): WebDAVAdapter
     {
         return new DCacheAdapter($webdavClient, $guzzleClient, $pathPrefix);
     }
